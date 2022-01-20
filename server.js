@@ -29,6 +29,18 @@ const server = app.listen(port, () => {
   console.log(`running on localhost:${port}`);
 });
 
-//Setting a GET route
-
 //Setting a POST route
+app.post("/add", (req, res) => {
+  newEntry = {
+    temp: req.body.temp,
+    date: req.body.date,
+    feelings: req.body.feelings,
+  };
+  projecData = newEntry;
+});
+
+//Setting a GET route
+app.get("/all", (req, res) => {
+  res.send(projecData);
+  console.log(projecData);
+});
