@@ -31,11 +31,11 @@ const server = app.listen(port, () => {
 
 //Setting a POST route
 app.post("/add", (req, res) => {
-  projecData = req.body;
-  res.send(projecData);
+  projectData = req.body;
+  res.send(projectData);
 });
 
 //Setting a GET route
 app.get("/all", (req, res) => {
-  res.send(projecData);
+  res.send(projectData);
 });

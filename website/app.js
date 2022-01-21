@@ -6,7 +6,7 @@ const date2 = new Date();
 const newDate = `"${date2.getDate()} / ${
   date2.getMonth() + 1
 } / ${date2.getFullYear()}"`;
-console.log(newDate);
+
 //Getting info from weather API
 document.getElementById("generate").addEventListener("click", performAction);
 
